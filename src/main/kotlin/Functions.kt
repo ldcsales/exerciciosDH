@@ -15,6 +15,8 @@ fun main(){
     println("\nExercicio 4\n")
     imprime100InteirosImpares()
     println("\nExercicio 5\n")
+    println(analisarQuatroInteiros(1,5,3,4))
+    println("\nExercicio 6\n")
     imprime100Positivo()
 
 }
@@ -78,9 +80,15 @@ fun imprime100InteirosImpares(){
     }
 }
 
-//5) Escrever um código que deve analisar quatro números inteiros e, caso numAseja maior que numC e numD ou caso numB seja maior que numC e numD,retornar true, caso contrário, retornar false.
+//5) Escrever um código que deve analisar quatro números inteiros e, caso numA seja maior que numC e numD ou caso numB seja maior que numC e numD,retornar true, caso contrário, retornar false.
 
-
+fun analisarQuatroInteiros(numeroA: Int,numeroB: Int,numeroC: Int,numeroD: Int) : Boolean {
+    if((numeroA>numeroC && numeroA>numeroD) || (numeroB>numeroC && numeroB>numeroD)){
+        return true
+    }else{
+        return false
+    }
+}
 
 //6) Escrever um programa que exiba os primeiros 100 números positivos.
 
