@@ -14,6 +14,9 @@ fun main(){
     println("\nExercicio 3\n" + analisarPar(5))
     println("\nExercicio 4\n")
     imprime100InteirosImpares()
+    println("\nExercicio 5\n")
+    imprime100Positivo()
+
 }
 
 fun soma(numero1: Int,numero2: Int) : Int{
@@ -76,7 +79,20 @@ fun imprime100InteirosImpares(){
 }
 
 //5) Escrever um código que deve analisar quatro números inteiros e, caso numAseja maior que numC e numD ou caso numB seja maior que numC e numD,retornar true, caso contrário, retornar false.
+
+
+
 //6) Escrever um programa que exiba os primeiros 100 números positivos.
+
+fun imprime100Positivo(){
+    var i: Int = 1
+    var num = 0
+
+    for(i in 1..100){
+        println("$i o numero e: $i")
+    }
+
+}
 
 
 
