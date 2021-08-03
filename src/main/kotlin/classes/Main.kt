@@ -7,7 +7,6 @@ fun main(){
     println(aluno.nome + " " + aluno.idade + " " + aluno.curso + " " + aluno.matricula)
 
 
-    val aposentado = Aposentado(65,'M',30).aposentadoria()
-    println(aposentado)
+    val aposentado = Aposentado(65,'M',30).printarAposentadoria()
 
 }

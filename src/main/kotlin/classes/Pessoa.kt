@@ -14,7 +14,8 @@ Em ambos os casos as pessoas devem ter pelo menos 30 anos de contribuição.
 
 class Aposentado(var idade: Int, var sexo: Char,var anosContribuicao: Int) {
 
-    //var sexoU = sexo.to
+    //sexo = sexo.toUpperCase()
+
 
     fun aposentadoria(): Boolean {
         if ((sexo == 'm') || (sexo == 'M')) {
@@ -28,6 +29,14 @@ class Aposentado(var idade: Int, var sexo: Char,var anosContribuicao: Int) {
         }
         return false
     }
+    fun printarAposentadoria(){
+        if(aposentadoria()){
+            println("Pode Aposentar")
+        }else{
+            println("Nao pode aposentar")
+        }
+    }
 }
+
 
 
