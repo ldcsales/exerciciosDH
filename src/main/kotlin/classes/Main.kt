@@ -8,5 +8,5 @@ fun main(){
 
     //teste da classe Aposentado
     val aposentado = Aposentado(65,'m',30).printarAposentadoria()
-
+    val multiplicar = Multiplicar(listOf(1,2,3,4)).printarResultado()
 }
