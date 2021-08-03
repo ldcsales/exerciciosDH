@@ -16,7 +16,7 @@ class Aposentado(var idade: Int, var sexo: Char,var anosContribuicao: Int) {
 
     //sexo = sexo.toUpperCase()
 
-
+// Verificar se a pessoa pode aposentar e retorna bool
 
     fun aposentadoria(): Boolean {
         this.sexo = sexo.uppercaseChar()
@@ -44,6 +44,9 @@ class Aposentado(var idade: Int, var sexo: Char,var anosContribuicao: Int) {
         }
         return false
     }
+
+    // imprime o resultado da funcao aposentadoria informando
+
     fun printarAposentadoria(){
         if(aposentadoria()){
             println("Pode Aposentar")
