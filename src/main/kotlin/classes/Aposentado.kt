@@ -17,12 +17,27 @@ class Aposentado(var idade: Int, var sexo: Char,var anosContribuicao: Int) {
     //sexo = sexo.toUpperCase()
 
 
+
     fun aposentadoria(): Boolean {
-        if ((sexo == 'm') || (sexo == 'M')) {
+        this.sexo = sexo.uppercaseChar()
+
+        /*if ((sexo == 'm') || (sexo == 'M')) {
             if ((idade >= 65) && (anosContribuicao >= 30)) {
                 return true
             }
         } else if ((sexo == 'f') || (sexo == 'F')) {
+            if ((idade >= 60) && (anosContribuicao >= 30)) {
+                return true
+            }
+        }
+        return false
+    }
+    */
+        if (sexo == 'M') {
+            if ((idade >= 65) && (anosContribuicao >= 30)) {
+                return true
+            }
+        } else if (sexo == 'F') {
             if ((idade >= 60) && (anosContribuicao >= 30)) {
                 return true
             }
