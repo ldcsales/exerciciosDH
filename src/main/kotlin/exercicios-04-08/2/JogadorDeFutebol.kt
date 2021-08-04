@@ -9,4 +9,7 @@ class JogadorDeFutebol(var nome : String , var energia : Int, var alegria  : Int
         println("GOOOOOOL")
     }
 
+    fun correr(){
+        energia = energia - 10
+    }
 }
