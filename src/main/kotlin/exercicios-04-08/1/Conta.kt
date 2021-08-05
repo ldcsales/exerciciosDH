@@ -18,4 +18,15 @@ class Conta(var numero: Int, var saldo: Double, var titular: Cliente) {
         println("Saldo Atual: $saldo")
     }
 
+    fun saque(valor : Double){
+
+        if(saldo >= valor){
+            saldo = saldo - valor
+            println("Transacao Realizada \n " + imprimirSaldo())
+        }else{
+            println("Saldo Insuficiente")
+        }
+
+    }
+
 }
