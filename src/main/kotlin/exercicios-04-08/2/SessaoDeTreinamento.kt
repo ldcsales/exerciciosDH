@@ -2,7 +2,7 @@ package `exercicios-04-08`.`2`
 
 class SessaoDeTreinamento(var experiencia: Int) {
 
-    fun treinarA(var jogador: JogadorDeFutebol){
+    fun treinarA(jogador: JogadorDeFutebol){
 
         jogador.correr()
         jogador.fazerGol()

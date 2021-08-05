@@ -1,6 +1,6 @@
 package `exercicios-04-08`.`2`
 
-class JogadorDeFutebol(var nome : String , var energia : Int, var alegria  : Int, var gols: Int, experiencia : Int) {
+class JogadorDeFutebol(var nome : String , var energia : Int, var alegria  : Int, var gols: Int, var experiencia : Int) {
 
     public fun fazerGol(){
         energia = energia - 5
