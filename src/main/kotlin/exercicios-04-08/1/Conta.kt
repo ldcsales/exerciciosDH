@@ -10,12 +10,24 @@ package `exercicios-04-08`.`1`
 class Conta(var numero: Int, var saldo: Double, var titular: Cliente) {
 
     fun deposito(valor : Double){
-        saldo = saldo + valor
+        saldo += valor
         println(imprimirSaldo())
     }
 
     fun imprimirSaldo(){
         println("Saldo Atual: $saldo")
+    }
+
+    fun saque(valor : Double){
+
+        if(saldo >= valor){
+            saldo -= valor
+            println("Transacao Realizada\n ${imprimirSaldo()}")
+
+        }else{
+            println("Saldo Insuficiente")
+        }
+
     }
 
 }
