@@ -9,9 +9,7 @@ fun main() {
     var prova2 = Prova(10,11)
     var prova3 = Prova(5,5)
 
-    //var resultado1 = prova1.podeRealizar(atleta1)
-    //var resultado2 = prova2.podeRealizar(atleta1)
-    //var resultado3 = prova3.podeRealizar(atleta1)
+
 
     if(prova1.podeRealizar(atleta1)){
         println("Atleta ${atleta1.nome} pode realizar prova 1")
