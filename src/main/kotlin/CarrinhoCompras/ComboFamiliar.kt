@@ -12,8 +12,9 @@ class ComboFamiliar(preco: Double, nome: String) : Produto(preco, nome) {
 
     override fun getPrecoProduto() : Double {
         var cont = 0
+        preco = 0.0
         for (cont in combos.indices) {
-            preco += combos[cont].preco
+            preco += combos[cont].precoPromocional
         }
         return preco
     }
