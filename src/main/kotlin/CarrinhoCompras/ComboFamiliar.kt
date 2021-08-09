@@ -1,6 +1,6 @@
 package CarrinhoCompras
 
-class ComboFamiliar(preco: Double, nome: String) : Produto(preco, nome) {
+class ComboFamiliar(preco : Double, nome: String): Produto(preco,nome) {
 
     var combos = mutableListOf<ComboSimples>()
 

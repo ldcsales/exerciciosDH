@@ -1,6 +1,9 @@
 package CarrinhoCompras
 
-open class Produto(var preco : Double = 0.0, var nome: String) {
+open class Produto(var preco : Double = 0.0,var nome: String = "") {
+
+
+
 
     /*
     public get(){
@@ -11,6 +14,10 @@ open class Produto(var preco : Double = 0.0, var nome: String) {
     open fun getPrecoProduto() : Double{
         return preco
     }
+
+    //fun alterarPreco(precoPromocional : Double) {
+       // preco = precoPromocional
+   // }
     /*open fun getPreco() : Double{
         return preco
     }*/

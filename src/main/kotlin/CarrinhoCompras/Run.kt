@@ -10,7 +10,7 @@ fun main() {
     comboFamilia1.adicionarCombo(comboSimples1)
     comboFamilia1.adicionarCombo(comboSimples2)
     println(comboFamilia1.getPrecoProduto())
-    println(comboSimples1.getPrecoProduto())
+    println(comboSimples3.getPrecoProduto())
     carrinho.adicionar(comboFamilia1)
     carrinho.adicionar(comboSimples3)
     println(carrinho.getValorTotal())
