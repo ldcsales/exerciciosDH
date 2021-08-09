@@ -1,6 +1,6 @@
 package CarrinhoCompras
 
-open class Produto(var preco: Float, var nome: String) {
+open class Produto(var preco: Double, var nome: String) {
 
 
 
