@@ -1,5 +1,9 @@
 package CarrinhoCompras
 
-class ComboSimples(var precoPromocional: Float, preco: Float, nome: String): Produto(preco, nome) {
+class ComboSimples(var precoPromocional: Double, preco: Double, nome: String): Produto(preco, nome) {
 
+
+    override fun getPreco(){
+        preco = precoPromocional
+    }
 }
