@@ -7,15 +7,20 @@ class Professor(var nome: String, var rd: Int) {
         return true
     }
 
-    fun fazerChamada(listaAlunos: List<Aluno>){
-
+    fun fazerChamada(listaAlunos: List<Aluno>, aula: Aula): List<Int>{
+        var listaPresenca = mutableListOf<Int>()
         var cont = 0
-        var listaPresentes = mutableListOf<Aluno>()
+        var cont2 = 0
         for(cont in listaAlunos){
+            for (cont2 in aula.listaPresentes){
+                if(listaAlunos[cont] == aula.listaPresentes[cont2]){
+                    listaPresenca.add(listaAlunos[cont])
+                }
+            }
 
         }
 
-        return
+        return listaPresenca
     }
 
 
