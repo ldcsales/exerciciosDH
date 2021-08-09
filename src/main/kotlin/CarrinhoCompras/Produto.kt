@@ -1,4 +1,8 @@
 package CarrinhoCompras
 
-class Produto {
+class Produto(var preco: Float, var nome: String) {
+
+
+
+
 }
