@@ -12,7 +12,7 @@ open class Conta(var saldo: Double, var cliente: Cliente) {
         return "Saldo Atual: $saldo"
     }
 
-    fun saque(valor : Double){
+    open fun saque(valor : Double){
 
         if(saldo >= valor){
             saldo -= valor

@@ -8,4 +8,16 @@ class Corrente(var chequeEspecial: Int, saldo: Double, cliente: Cliente) : Conta
         return true
     }
 
+    override fun saque(valor : Double){
+
+        if((saldo + chequeEspecial)  >= valor) {
+            saldo -= valor
+            println("Transacao Realizada\n${imprimirSaldo()}")
+
+        }else{
+            println("Saldo Insuficiente")
+        }
+
+    }
+
 }
