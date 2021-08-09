@@ -1,6 +1,6 @@
 package Santander
 
-class Conta(var saldo: Double, var cliente: Cliente) {
+open class Conta(var saldo: Double, var cliente: Cliente) {
 
     fun deposito(valor : Double){
         saldo += valor
