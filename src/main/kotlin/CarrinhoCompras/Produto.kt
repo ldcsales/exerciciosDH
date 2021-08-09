@@ -1,0 +1,4 @@
+package CarrinhoCompras
+
+class Produto {
+}
