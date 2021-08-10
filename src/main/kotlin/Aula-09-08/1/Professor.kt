@@ -16,6 +16,7 @@ class Professor(var nome: String, var rd: Int) {
         for (cont in listaAlunos.indices) {
             for (cont2 in aula.listaPresentes.indices) {
                 if ((listaAlunos[cont].ra) == (aula.listaPresentes[cont2].ra)) {
+                    println("OK")
                     listaPresenca.add(1)
                     break
                 }
@@ -23,7 +24,7 @@ class Professor(var nome: String, var rd: Int) {
             }
             listaPresenca.add(0)
         }
-
+        println(listaPresenca)
         return listaPresenca
     }
 
@@ -32,4 +33,4 @@ class Professor(var nome: String, var rd: Int) {
 
 
 
-}
+

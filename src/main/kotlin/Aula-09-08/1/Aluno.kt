@@ -2,10 +2,10 @@ package `Aula-09-08`.`1`
 
 class Aluno(var ra: Int, var nome: String, var sobrenome: String) {
 
-    fun assistirAula(aula: Aula, aluno: Aluno): Boolean{
+    fun assistirAula(aula: Aula, aluno: Aluno){
         println("Aula assistida")
         aula.adicionarAlunoPresente(aluno)
-        return true
+        //return true
 
     }
 
