@@ -3,12 +3,12 @@ package `Aula-09-08`.`1`
 class Professor(var nome: String, var rd: Int) {
 
 
-
     fun darAula(aula: Aula): Boolean {
         println("Aula realizada.")
         return true
     }
-    fun fazerChamada(aula: Aula, listaAlunos: MutableList<Aluno>){
+
+    fun fazerChamada(aula: Aula, listaAlunos: MutableList<Aluno>) {
         println("Iniciando Chamada")
         aula.gerarListaPresenca(listaAlunos)
         println("Chamada Finalizada")
