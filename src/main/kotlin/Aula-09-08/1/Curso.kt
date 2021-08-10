@@ -15,4 +15,18 @@ class Curso(var nome: String, professor: Professor) {
         listaAlunos.add(aluno)
 
     }
+
+    fun imprimirAlunosCurso(){
+        var cont =0
+        for(cont in listaAlunos.indices){
+            println("RA: ${listaAlunos[cont].ra} Nome: ${listaAlunos[cont].nome} ${listaAlunos[cont].sobrenome}")
+        }
+    }
+
+    fun imprimirAulasCurso(){
+        var cont =0
+        for(cont in listaAulas.indices){
+            println("Inicio: ${listaAulas[cont].horarioInicio} Termino: ${listaAulas[cont].horarioTermino} Materia:${listaAulas[cont].materia}")
+        }
+    }
 }
