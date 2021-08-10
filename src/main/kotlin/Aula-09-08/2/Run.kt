@@ -11,4 +11,6 @@ fun main() {
     fatura.adicionarItem(item3)
 
     println(fatura.totalDaFatura())
+    fatura.imprimirFatura()
+    //println(fatura.listaFatura)
 }

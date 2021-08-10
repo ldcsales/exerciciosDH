@@ -18,4 +18,11 @@ class Fatura() {
         }
         return total
     }
+
+    fun imprimirFatura() {
+        var cont = 0
+        for (cont in listaFatura.indices) {
+            println("${listaFatura[cont].numero} ${listaFatura[cont].descricao} ${listaFatura[cont].quantidade} ${listaFatura[cont].preco}")
+        }
+    }
 }
