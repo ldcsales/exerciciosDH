@@ -29,10 +29,11 @@ fun main() {
     //professor1.darAula(aula)
     curso.imprimirAlunosCurso()
     aula.imprimirAlunosPresentes()
-    println(professor1.fazerChamada(curso.listaAlunos,aula))
+    //println(professor1.fazerChamada(curso.listaAlunos,aula))
     //println(listateste)
     //aluno1.assistirAula(aula,aluno1)
     //assistirAula(aula,aluno1)
+    aula.gerarListaPresenca(curso.listaAlunos)
 
 
 }

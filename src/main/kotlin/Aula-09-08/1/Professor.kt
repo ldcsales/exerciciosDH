@@ -8,8 +8,13 @@ class Professor(var nome: String, var rd: Int) {
         println("Aula realizada.")
         return true
     }
+    fun fazerChamada(aula: Aula, listaAlunos: MutableList<Aluno>){
+        println("Iniciando Chamada")
+        aula.gerarListaPresenca(listaAlunos)
+        println("Chamada Finalizada")
+    }
 
-    fun fazerChamada(listaAlunos: MutableList<Aluno>, aula: Aula): MutableList<Int> {
+    /*fun fazerChamada(listaAlunos: MutableList<Aluno>, aula: Aula): MutableList<Int> {
         var listaPresenca = mutableListOf<Int>()
         var cont : Int = 0
         var cont2 : Int = 0
@@ -44,7 +49,7 @@ class Professor(var nome: String, var rd: Int) {
 
         //println(listaPresenca)
         return listaPresenca
-    }
+    }*/
 
 
 }
