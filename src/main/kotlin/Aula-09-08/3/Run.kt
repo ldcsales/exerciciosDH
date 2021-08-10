@@ -1,7 +1,7 @@
 package `Aula-09-08`.`3`
 
 fun main() {
-    var estoque = Estoque("Caneca",10,5)
+    var estoque = Estoque("Caneca", 10, 5)
 
     estoque.mudarNome("Caneta")
     estoque.mostra()
