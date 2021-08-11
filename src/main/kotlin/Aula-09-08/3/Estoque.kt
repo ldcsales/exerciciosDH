@@ -16,9 +16,14 @@ class Estoque(
 
     }
 
+    val red = "\u001b[31m"
+    val yellow ="\u001b[33m"
+    val reset = "\u001b[0m"
+
+
     fun mudarNome(nome: String) {
         this.nome = nome
-        println("Nome Alterado para ${this.nome}\n")
+        println(red + "Nome Alterado para ${this.nome}\n" + reset)
     }
 
     fun mudarQtdMinima(qtdMinima: Int) {
