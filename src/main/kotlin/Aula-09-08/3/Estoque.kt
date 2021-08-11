@@ -6,6 +6,16 @@ class Estoque(
     var qtdMinima: Int
 ) {
 
+    init {
+        if (qtdAtual < 0) {
+            qtdAtual = 0
+        }
+        if (qtdMinima < 0) {
+            qtdMinima = 0
+        }
+
+    }
+
     fun mudarNome(nome: String) {
         this.nome = nome
         println("Nome Alterado para ${this.nome}\n")
