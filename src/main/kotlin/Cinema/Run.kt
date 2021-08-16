@@ -8,6 +8,8 @@ fun main() {
     var ingressoVip = IngressoVip(20.0,ingressoPadrao.valor)
 
     val scanner = Scanner(System.`in`)
+
+    //opcao do while
     do {
 
         println("Ola, qual ingresso gostaria de comprar?")
@@ -33,5 +35,21 @@ fun main() {
 
     }while(resposta != 3)
 
+    // OPCAO COM CASE
+
+    println("Ola, qual ingresso gostaria de comprar?")
+    println(
+        """
+        1 - Ingresso Padrao
+        2 - Ingresso Vip
+        3 - Sair
+    """.trimIndent()
+    )
+    when(scanner.nextInt()){
+        1 -> ingressoPadrao.imprimeValor()
+        2 -> ingressoVip.imprimeValor()
+        3 -> println("Obrigado, ate a proxima")
+        else -> println("Opcao invalida, digite novamente")
+    }
 
 }

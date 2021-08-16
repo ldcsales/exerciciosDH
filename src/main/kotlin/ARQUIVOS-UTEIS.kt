@@ -39,11 +39,13 @@ fun game() {
     }
 
 }
+
+
 fun case() {
     val scanner = Scanner(System.`in`)
     when (scanner.nextInt()) {
-        1 -> IngressoPadrao().imprimeValor()
-        2 -> IngressoVip().imprimeValor()
+        1 -> println("Opcao 1, chamar algo")
+        2 -> println("Opcao 2, chamar algo")
         else -> {
             println("Opcao Invalida")
         }
