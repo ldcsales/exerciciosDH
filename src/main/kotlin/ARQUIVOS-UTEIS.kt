@@ -39,3 +39,14 @@ fun game() {
     }
 
 }
+fun case() {
+    val scanner = Scanner(System.`in`)
+    when (scanner.nextInt()) {
+        1 -> IngressoPadrao().imprimeValor()
+        2 -> IngressoVip().imprimeValor()
+        else -> {
+            println("Opcao Invalida")
+        }
+
+    }
+}
