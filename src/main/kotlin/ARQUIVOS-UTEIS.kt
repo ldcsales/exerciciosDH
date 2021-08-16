@@ -40,6 +40,8 @@ fun game() {
 
 }
 
+// https://github.com/MarceloVicenteVerri/exercicios_hd/blob/main/Exercicio01/src/main/kotlin/JanelaGrafica/Menuform2.kt
+
 
 fun case() {
     val scanner = Scanner(System.`in`)
