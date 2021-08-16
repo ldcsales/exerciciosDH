@@ -20,7 +20,7 @@ fun main() {
         3 - Sair
     """.trimIndent()
         )
-        println("Cleann")
+        //println("Cleann")
         var resposta = scanner.nextInt()
 
         if (resposta == 1) {
