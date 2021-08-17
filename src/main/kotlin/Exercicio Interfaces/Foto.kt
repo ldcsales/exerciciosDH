@@ -1,6 +1,9 @@
 package `Exercicio Interfaces`
 
-class Foto(override var nome: String, override var tipoDocumento: String) : Imprimivel {
+class Foto(
+    override var nome: String,
+    override var tipoDocumento: String
+) : Imprimivel {
 
     //override
 
