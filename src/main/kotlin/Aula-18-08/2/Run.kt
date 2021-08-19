@@ -13,5 +13,7 @@ fun main() {
     println(coca1.toString())
     println(coca1.hashCode())
 
+    println(coca1.equals(coca2))
+
 
 }
