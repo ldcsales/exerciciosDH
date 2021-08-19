@@ -9,6 +9,9 @@ fun main() {
     }else{
         println("False")
     }
+//nao e necessario chamar o toString()
+    println(pessoa1.toString())
+    println(pessoa1.hashCode())
 
 
 

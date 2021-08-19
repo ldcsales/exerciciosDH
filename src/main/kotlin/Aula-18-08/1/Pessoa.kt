@@ -11,5 +11,13 @@ class Pessoa(
         return (other is Pessoa && other.rg == this.rg)
     }
 
+    override fun hashCode(): Int {
+        return rg
+    }
+
+    override fun toString(): String {
+        return "$nome $rg"
+    }
+
 
 }
