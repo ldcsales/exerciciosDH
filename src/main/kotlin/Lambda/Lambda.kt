@@ -1,7 +1,13 @@
 package Lambda
 
 fun main() {
-    println(soma(5,5))
+    println(soma(5, 5))
+    println(subtracao(5, 5))
+    println(divisao(10, 5))
+    println(multiplicacao(5, 5))
+    println(validaEmail("lucas.goluol.com.br"))
+    println(produtoLista(listOf(1, 2, 2, 2, 2, 2)))
+    println(produtoLista(listOf()))
 }
 
 /*
@@ -25,11 +31,29 @@ OBS. essa função deve retornar true oufalse, ok? =)
 Execute-o na função Main, printando o resultado.
  */
 
+val validaEmail: (String) -> Boolean = {
+    (it.contains("@"))
+}
+
 /*
 Cria uma função lambda que receba uma List<Int>e
 calcule e retorne oproduto dos itens contidos na mesma.
 Execute-o na função Main, printando o resultado.
  */
+
+val produtoLista: (List<Int>) -> Int = {
+    var produto: Int = 1
+    //println(i)
+    if (it.isEmpty()) {
+        produto = 0
+    } else {
+        for (i in it) {
+            produto *= i
+        }
+    }
+    produto
+
+}
 
 /*
 //Exemplo simples, retornando UNIT
