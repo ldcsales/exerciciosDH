@@ -3,16 +3,16 @@ package FunctionsII.CaixaMercado
 class Caixa {
 
    inline fun fechamentoDeConta(
-       imprimeCabecalhoNotaFiscal:() -> Unit,
+       imprimeCabecalhoNotaFiscal: () -> Unit,
        retornaDataAtualDaCompra: () -> String,
        imprimeListaDeProdutos: () -> Unit,
-       adicionaRodape: () -> Double
+       adicionaRodape: () -> Double,
 
    ){
        imprimeCabecalhoNotaFiscal()
        retornaDataAtualDaCompra()
        imprimeListaDeProdutos()
-       adicionaRodape()
+       println("TOTAL = ${adicionaRodape()}")
 
     }
 }
