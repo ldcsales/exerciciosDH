@@ -10,7 +10,7 @@ class Caixa {
 
    ){
        imprimeCabecalhoNotaFiscal()
-       retornaDataAtualDaCompra()
+       println(retornaDataAtualDaCompra())
        imprimeListaDeProdutos()
        println("TOTAL = ${adicionaRodape()}")
 
