@@ -2,7 +2,17 @@ package FunctionsII.CaixaMercado
 
 class Caixa {
 
-   inline fun fechamentoDeConta(){
+   inline fun fechamentoDeConta(
+       imprimeCabecalhoNotaFiscal:() -> Unit,
+       retornaDataAtualDaCompra: () -> String,
+       imprimeListaDeProdutos: () -> Unit,
+       adicionaRodape: () -> Double
+
+   ){
+       imprimeCabecalhoNotaFiscal()
+       retornaDataAtualDaCompra()
+       imprimeListaDeProdutos()
+       adicionaRodape()
 
     }
 }
