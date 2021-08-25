@@ -16,7 +16,7 @@ fun imprimeCabecalhoNotaFiscal(){
 
 fun retornaDataAtualDaCompra(): String{
     val data = Calendar.getInstance()
-    return "${data.get(Calendar.DATE)}/${data.get(Calendar.MONTH)}/${data.get(Calendar.YEAR)}"
+    return "${data.get(Calendar.DATE)}/${data.get(Calendar.MONTH)+1}/${data.get(Calendar.YEAR)}"
 }
 
 fun imprimeListaDeProdutos(lista: ArrayList<Produto>){
