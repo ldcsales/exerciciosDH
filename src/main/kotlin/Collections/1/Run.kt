@@ -1,4 +1,4 @@
-package Collections
+package Collections.`1`
 
 fun main() {
     var dicionario = Dicionario()
