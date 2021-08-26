@@ -6,12 +6,12 @@ marca e modelo,
 ambas de tipo String e um
 método abstrato chamado retirada.
  */
- class Peca(
+class Peca(
     var marca: String = "",
     var modelo: String = "",
 ) {
 
-    fun retirada(){
+    fun retirada() {
 
     }
 }
