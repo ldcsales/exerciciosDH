@@ -10,19 +10,18 @@ fun main() {
     var peca6 = Peca("Tifanny", "Colar")
     var peca7 = Peca("Brooksfield", "Bermuda")
 
-    var guarda1 = GuardaVolumes()
-    var lista1 = mutableListOf<Peca>(peca1, peca2)
-    guarda1.guardarPecas(lista1)
-    guarda1.mostrarPecas()
-    //guarda1.devolverPecas(1)
-    //guarda1.mostrarPecas()
+    var guarda = GuardaVolumes()
 
-    lista1.clear()
-    lista1 = mutableListOf(peca3,peca4,peca5)
-    guarda1.guardarPecas(lista1)
-    guarda1.mostrarPecas()
-    guarda1.devolverPecas(2)
+    var lista = mutableListOf<Peca>(peca1, peca2)
 
+    println(guarda.guardarPecas(lista))
+    guarda.mostrarPecas()
+
+    lista = mutableListOf(peca3, peca4, peca5)
+    println(guarda.guardarPecas(lista))
+    guarda.mostrarPecas()
+    guarda.devolverPecas(1)
+    guarda.mostrarPecas()
 
 
 }

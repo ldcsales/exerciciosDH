@@ -3,13 +3,13 @@ package Collections.SaveTheRoupa
 class GuardaVolumes {
 
     var dicionario = mutableMapOf<Int, MutableList<Peca>>()
-    var contador = 0
+    var contador: Int = 0
+
 
     fun guardarPecas(lista: MutableList<Peca>): Int {
-        contador++
-        //println(lista[0].marca)
-        dicionario = mutableMapOf<Int, MutableList<Peca>>(contador to lista)
-        //println(dicionario)
+        this.contador++
+        //dicionario = mutableMapOf<Int, MutableList<Peca>>(contador to lista)
+        dicionario.put(contador, lista)
         return contador
     }
 
@@ -18,11 +18,13 @@ class GuardaVolumes {
             for (cont in valor)
                 println("Chave: ${chave} Item: ${cont.marca} ${cont.modelo}")
         }
+        println("\n")
     }
 
     fun devolverPecas(numero: Int) {
         dicionario.remove(numero)
-        contador -= 1
+        //contador=numero
+
     }
 
 }
