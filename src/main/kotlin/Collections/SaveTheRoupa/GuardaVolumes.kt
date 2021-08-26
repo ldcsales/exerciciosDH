@@ -22,6 +22,7 @@ class GuardaVolumes {
 
     fun devolverPecas(numero: Int) {
         dicionario.remove(numero)
+        contador -= 1
     }
 
 }
