@@ -24,7 +24,8 @@ fun main() {
     )
     */
 
-    caixa.fechamentoDeConta({ imprimeCabecalhoNotaFiscal() },
+    caixa.fechamentoDeConta(
+        { imprimeCabecalhoNotaFiscal() },
         { retornaDataAtualDaCompra() },
         { imprimeListaDeProdutos(carrinhoDeCompras.lista) },
         { adicionaRodape(carrinhoDeCompras.lista) }
